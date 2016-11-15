@@ -165,32 +165,32 @@
 
 - (void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(UInt16)port
 {
-    NSLog(@"Socket did connect to host");
+//    NSLog(@"Socket did connect to host");
 }
 
 - (void)socketDidSecure:(GCDAsyncSocket *)sock
 {
-    NSLog(@"Socket did secure");
+//    NSLog(@"Socket did secure");
 }
 
 - (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)error
 {
-    NSLog(@"Socket did disconnect. Error: %@", error);
+//    NSLog(@"Socket did disconnect. Error: %@", error);
 }
 
 - (void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag
 {
-    NSLog(@"Socket did write data");
+//    NSLog(@"Socket did write data");
 }
 
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didSendDataWithTag:(long)tag
 {
-    NSLog(@"UDP Socket did write data");
+//    NSLog(@"UDP Socket did write data");
 }
 
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didNotSendDataWithTag:(long)tag dueToError:(NSError *)error
 {
-    NSLog(@"UDP Socket Error: %@", error.localizedDescription);
+//    NSLog(@"UDP Socket Error: %@", error.localizedDescription);
 }
 
 #endif
